@@ -1,0 +1,32 @@
+# open terminal
+cmd - return : /Applications/iTerm.app/Contents/MacOS/iTerm2
+# switch to spaces
+cmd - 1 : yabai -m space --focus 1
+cmd - 2 : yabai -m space --focus 2
+cmd - 3 : yabai -m space --focus 3
+cmd - 4 : yabai -m space --focus 4
+cmd - 5 : yabai -m space --focus 5
+cmd - 6 : yabai -m space --focus 6
+# send window to space
+alt + cmd - 1 : yabai -m window --space 1
+alt + cmd - 2 : yabai -m window --space 2
+alt + cmd - 3 : yabai -m window --space 3
+alt + cmd - 4 : yabai -m window --space 4
+alt + cmd - 5 : yabai -m window --space 5
+alt + cmd - 6 : yabai -m window --space 6
+# focused window to float in center (adjust size to be bigger)
+alt - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+# restart yabai
+shift + cmd - y : yabai --restart-service
+# bring window to fullscreen and focus
+shift + alt - space : yabai -m window --toggle zoom-fullscreen
+# cycle focus between windows
+fn + cmd - h : yabai -m window --focus west
+fn + cmd - j : yabai -m window --focus south
+fn + cmd - k : yabai -m window --focus north
+fn + cmd - l : yabai -m window --focus east
+# move windows
+shift + cmd - h : yabai -m window --swap west 
+shift + cmd - j : yabai -m window --swap south
+shift + cmd - k : yabai -m window --swap north
+shift + cmd - l : yabai -m window --swap east
