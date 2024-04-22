@@ -1,0 +1,2 @@
+# dots
+macOS rice dotfiles
